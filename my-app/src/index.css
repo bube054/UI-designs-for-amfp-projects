@@ -1,0 +1,23 @@
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active-dashboard-btn {
+    @apply w-full flex items-center p-2 text-base font-semibold text-main rounded-lg bg-light dark:bg-black dark:text-main;
+  }
+  .unactive-dashboard-btn {
+    @apply w-full flex items-center p-2 text-base font-semibold text-main rounded-lg hover:bg-light dark:text-white dark:bg-black dark:hover:text-main
+  }
+  .active-date {
+    @apply cursor-pointer hover:text-main text-center text-main font-bold
+  }
+  .unactive-date {
+    @apply cursor-pointer hover:text-main text-center
+  }
+}
