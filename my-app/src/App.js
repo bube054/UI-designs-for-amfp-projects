@@ -7,55 +7,61 @@ const position = [51.505, -0.09]
 function App() {
   return (
     <div className="">
-      <div className='border-2 border-main rounded-lg flex max-w-[80%]'>
-        <div className='flex-1 py-1 grow-[3] px-3'>
-          <h1 className='text-3xl font-bold capitalize truncate'>IT support engineer needed</h1>
-          <span class="inline-flex items-center bg-gray-200 text-black text-xs font-medium px-2.5 py-0.5 truncate rounded-full">
-            Problem(0)
-          </span>
-        </div>
-        <div className='border-x-2 border-gray-200 flex-1 py-1 grow-[3] px-3'>
-          <span className={`text-purple-500 bg-purple-500 bg-opacity-20 text-base font-medium mr-2 px-6 py-2 rounded-full capitalize`}> 
-            Assigned
-          </span>
-          <span className='text-3xl font-bold capitalize truncate'> #1010222 </span>
-          <span className='text-lg font-medium block mt-2'> Created on 12/10/2022 </span>
-        </div>
-        <div className='flex-1 p-1 grow-[1.5] flex-col'>
-          <div className={`flex items-center space-x-1`}>
-            <div className={`flex-shrink-0 w-8 h-8 flex items-center justify-center`}>
-              <IconMapPinFilled className='w-5 h-5'/>
-            </div>
-            <div className={`flex-1 min-w-0`}>
-              <p className={`text-sm text-ash truncate`}>
-              {/* <p className={`text-base font-semibold text-black truncate capitalize`}> */}
-                Location
-              </p>
-              <p className={`text-base font-semibold text-black truncate capitalize`}>New York</p>
-              {/* <p className={`text-sm text-ash truncate`}>{user.phone || "————————"}</p> */}
+      <div className='flex'>
+        <div className='border-2 border-main rounded-lg w-auto overflow-x-auto md:w-[80%] flex  sm:flex-row'>
+          <div className='border border-main p-1 sm:px-3 sm:py-1 flex-[3] flex flex-row items-center flex-wrap justify-start'>
+            <h1 className='text-xl md:text-3xl font-bold truncate'>IT support engineer needed</h1>
+            <div class="inline-flex items-center bg-gray-200 text-black text-sm font-medium px-4 py-0.5 truncate rounded-full">
+              Problem(0)
             </div>
           </div>
-          <div className={`flex items-center space-x-1`}>
-            <div className={`flex-shrink-0`}>
-              <div className={`inline-flex overflow-hidden relative justify-center items-center w-8 h-8 border border-secondary bg-gray-100 rounded-full uppercase`}>
-                {/* <span className={`font-medium text-gray-600`}>{user.first_name.slice(0,1)}{user.last_name.slice(0,1)}</span> */}
-                <span className={`font-medium text-gray-600`}>DF</span>
+          <div className='border border-main p-1 sm:px-3 sm:py-1 flex-[3] flex flex-row items-center flex-wrap'>
+            <span className="truncate m-1 inline-block text-purple-500 bg-purple-500 bg-opacity-20 text-base font-medium mr-2 px-6 py-2 rounded-full capitalize"> 
+              Assigned
+            </span>
+            <span className='truncate m-1 inline-block text-xl md:text-3xl font-bold capitalize'> #1010222 </span>
+            <span className='truncate m-1 inline-block text-base md:text-lg font-medium'> Created on 12/10/2022 </span>
+          </div>
+          <div className='border border-main p-1 sm:px-3 sm:py-1 flex-[1] flex flex-col'>
+            <div className={`flex items-center space-x-1`}>
+              <div className={`flex-shrink-0 w-8 h-8 flex items-center justify-center`}>
+                <IconMapPinFilled className='w-6 h-6'/>
               </div>
-              {/* <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Neil"/> */}
+              <div className={`flex-1 min-w-0`}>
+                <p className={`text-sm text-ash truncate`}>
+                {/* <p className={`text-base font-semibold text-black truncate capitalize`}> */}
+                  Location
+                </p>
+                <p className={`text-base font-semibold text-black truncate capitalize`}>New York</p>
+                {/* <p className={`text-sm text-ash truncate`}>{user.phone || "————————"}</p> */}
+              </div>
             </div>
-            <div className={`flex-1 min-w-0`}>
-              <p className={`text-base font-semibold text-black truncate capitalize`}>
-                Deji Faruq
-                {/* {user.first_name} {user.last_name} */}
-              </p>
-              <p className={`text-sm text-ash truncate`}>08099778654</p>
-              {/* <p className={`text-sm text-ash truncate`}>{user.phone || "————————"}</p> */}
+            <div className={`flex items-center space-x-1`}>
+              <div className={`flex-shrink-0`}>
+                <div className={`inline-flex overflow-hidden relative justify-center items-center w-8 h-8 border border-secondary bg-gray-100 rounded-full uppercase`}>
+                  {/* <span className={`font-medium text-gray-600`}>{user.first_name.slice(0,1)}{user.last_name.slice(0,1)}</span> */}
+                  <span className={`font-medium text-gray-600`}>DF</span>
+                </div>
+                {/* <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Neil"/> */}
+              </div>
+              <div className={`flex-1 min-w-0`}>
+                <p className={`text-base font-semibold text-black truncate capitalize`}>
+                  Deji Faruq
+                  {/* {user.first_name} {user.last_name} */}
+                </p>
+                <p className={`text-sm text-ash truncate`}>08099778654</p>
+                {/* <p className={`text-sm text-ash truncate`}>{user.phone || "————————"}</p> */}
+              </div>
             </div>
           </div>
+        </div>
+        <div className='md:flex md:items-center md:justify-center w-[20%] hidden'>
+          <button className='focus:outline-none text-white bg-green-700 hover:bg-green-800 font-semibold text-xs sm:text-sm md:text-base px-5 py-2'>Edit Job</button>
         </div>
       </div>
-      <div className='flex min-h-screen font-title gap-2'>
+      <div className='flex min-h-screen hidden font-title gap-2'>
         <div className="basis-[80%]">
+          <hr className="my-4 bg-black border border-black"/>
           {/* VIEW JOB CATEGORY */}
           <div className="">
             <h5 className="text-xl font-bold capitalize">Job Categories</h5>
